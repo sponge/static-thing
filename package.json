@@ -1,0 +1,17 @@
+{
+  "name": "static-thing",
+  "version": "1.0.0",
+  "description": "static website thing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "glob-promise": "^3.4.0",
+    "toml": "^3.0.0"
+  },
+  "type": "module"
+}
