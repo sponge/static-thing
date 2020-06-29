@@ -1,6 +1,6 @@
 import fs from 'fs/promises';
 import glob from 'glob-promise';
-import toml from 'toml';
+import toml from '@iarna/toml';
 import path from "path"
 
 import Model from "./model.js";
@@ -20,7 +20,7 @@ class Project {
       this.contentDir = project.settings.content_dir || 'content';
     } catch (e) {
       console.trace("Error loading project settings", e);
-      return undefined;
+      return false;
     }
   
     this.models = {};
@@ -38,6 +38,7 @@ class Project {
     }
   
     console.log(this.models);
+    return true;
   }
 }
 

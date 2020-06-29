@@ -9,10 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@iarna/toml": "^2.2.5",
     "glob": "^7.1.6",
     "glob-promise": "^3.4.0",
-    "nunjucks": "^3.2.1",
-    "toml": "^3.0.0"
+    "nunjucks": "^3.2.1"
   },
   "type": "module"
 }
