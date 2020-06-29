@@ -5,10 +5,6 @@ class Model {
     this.name = options.model.name;
     this.label = options.model.label;
   }
-
-  loadContent(content) {
-
-  }
 }
 
 export default Model;

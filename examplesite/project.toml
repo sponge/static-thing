@@ -1,0 +1,3 @@
+[settings]
+models_dir = "models"
+content_dir = "content"
