@@ -1,14 +1,27 @@
+import toml from '@iarna/toml';
+
 class Content {
   constructor(options) {
-    if (!options.path) {
-      throw new Error("Missing required option path");
+    if (!options.id) {
+      throw new Error('Missing required option: path');
+    }
+
+    if (!options.name) {
+      throw new Error('Missing required option: name');
     }
     
-    this.path = options.path;
+    this.id = options.id;
+    this.name = options.name;
+    this.children = [];
+    this.model = undefined;
+    this.parent = undefined;
+    this.fields = {};
   }
 
-  async load(contentStr) {
-    
+  validateFieldsAgainstModel(fields, model) {
+    // FIXME: i don't care
+    this.fields = fields;
+    this.model = model;
   }
 }
 

@@ -1,0 +1,6 @@
+model = "blog"
+title = "my first post"
+summary = "a gentle introduction"
+body = """
+my first blog post is kinda boring
+"""

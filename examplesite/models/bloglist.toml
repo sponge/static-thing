@@ -1,0 +1,7 @@
+[model]
+name = "Blog List"
+label = "Blog List"
+
+[children]
+model = "blog"
+order_by = ["sort_key", "-year", "name"]

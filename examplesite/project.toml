@@ -1,4 +1,4 @@
 [settings]
 models_dir = "models"
 content_dir = "content"
-templates_dir = "content"
+templates_dir = "templates"
