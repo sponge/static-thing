@@ -96,7 +96,8 @@ class Project extends EventEmitter {
           // this will eventually not be toml since it's not the most low-friction way to write
           // posts from command line
           const fields = toml.parse(await fs.readFile(f.name, 'utf-8'));
-          // walk up the parents until we find a model if one isn't set here
+          // walk up the parents until we find a model in a _model key
+          // but ignore _model if the parent model has a children key setup
           // ???
 
           node.validateFieldsAgainstModel(fields, undefined);

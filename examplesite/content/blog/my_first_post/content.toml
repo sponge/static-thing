@@ -1,4 +1,4 @@
-model = "blog"
+_model = "blog"
 title = "my first post"
 summary = "a gentle introduction"
 body = """

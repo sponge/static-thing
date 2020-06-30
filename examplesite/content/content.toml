@@ -1,4 +1,4 @@
-model = "page"
+_model = "page"
 title = "Hello World!"
 body = """
 this is some body test
